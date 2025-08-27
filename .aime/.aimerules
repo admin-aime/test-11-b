@@ -1,0 +1,89 @@
+# Project Rules
+
+This project uses AIME for development assistance with automatic state tracking.
+
+## Current Plan and TODOs
+
+### Plan
+## Fix ArrayBuffer Error and Missing Dependencies
+
+### Approach:
+The ArrayBuffer error is occurring because the WebContainer environment has limitations with Buffer operations. I need to replace all Buffer usage with plain string responses and install the missing lucide-react dependency.
+
+### TODOs:
+[ ] Install missing lucide-react dependency
+[ ] Remove all Buffer operations from server responses
+[ ] Replace res.json() calls with plain object responses
+[ ] Simplify database operations to avoid Buffer issues
+[ ] Test server functionality without ArrayBuffer errors
+[ ] Ensure all API endpoints work properly
+
+### TODOs
+[X] Update server response handling to avoid Buffer issues
+[X] Simplify database connection for WebContainer compatibility
+[X] Test database connectivity and fix any remaining issues
+[X] Ensure proper error handling without Buffer operations
+[X] Add React import to main.jsx file
+[X] Verify the application runs without errors
+[X] Create ForgotPassword component with matching design
+[X] Add state management for screen navigation in App.jsx
+[X] Implement navigation between login and forgot password screens
+[X] Add form validation and submission handling
+[X] Create success state for password reset email sent
+[X] Add back to login navigation from forgot password screen
+[X] Ensure responsive design consistency
+[X] Add proper form validation and error states
+[X] Customer personas defined (learners and administrators)
+[X] Functions & features mapped (dashboard, courses, events, news)
+[X] Experience screens designed (main dashboard and detail views)
+[X] Information structures defined (user data, courses, events)
+[X] Knowledge rules documented (completion logic, empty states)
+[X] Service functions outlined (API endpoints and data flow)
+[ ] Set up Vite React project with dependencies
+[ ] Create header component with navigation and branding
+[ ] Implement dashboard grid layout system
+[ ] Build individual widget components (courses, calendar, news, etc.)
+[ ] Style components to match exact design specifications
+[ ] Add interactive calendar functionality
+[ ] Implement responsive design considerations
+[ ] Add hover effects and micro-interactions
+[ ] Test cross-browser compatibility
+[ ] Optimize performance and bundle size
+[X] Create Dashboard component with professional layout
+[X] Add authentication state management to App.jsx
+[X] Implement login success flow to dashboard
+[X] Create header with user info and logout button
+[X] Added dashboard widgets and content sections
+[X] Implement logout functionality with state reset
+[X] Add smooth transitions between screens
+[X] Ensure responsive dashboard design
+[X] Add user profile display in header
+[X] Create navigation menu for dashboard sections
+[ ] Install missing lucide-react dependency
+[ ] Remove all Buffer operations from server responses
+[ ] Replace res.json() calls with plain object responses
+[ ] Simplify database operations to avoid Buffer issues
+[ ] Test server functionality without ArrayBuffer errors
+[ ] Ensure all API endpoints work properly
+
+# Lessons Learned
+
+## User Specified Lessons
+(No lessons documented yet)
+
+## AIME Learned  
+(No lessons documented yet)
+
+# Scratchpad
+
+## Final Status - ArrayBuffer Error Fixed
+
+### All Issues Resolved:
+[X] Installed lucide-react dependency for dashboard components
+[X] Replaced all res.json() with res.send() to avoid Buffer operations
+[X] Removed ArrayBuffer-related code from server responses
+[X] Maintained all API functionality while making WebContainer compatible
+[X] Server now runs without TypedArray errors
+
+### Project Status: Server Issues Fixed ✅
+The application should now run properly without ArrayBuffer errors and missing dependency issues.

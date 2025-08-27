@@ -1,0 +1,32 @@
+.dashboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-row:last-child {
+  grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 1200px) {
+  .grid-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid-row:last-child {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-row {
+    grid-template-columns: 1fr;
+  }
+}

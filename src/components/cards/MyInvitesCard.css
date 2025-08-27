@@ -1,0 +1,59 @@
+.my-invites-card {
+  background: white;
+}
+
+.my-invites-card .card-header {
+  background: #8bc34a;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.my-invites-card .card-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.my-invites-card .card-content {
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.empty-state {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.calendar-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+}
+
+.clock-overlay {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  background: white;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.empty-message {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}

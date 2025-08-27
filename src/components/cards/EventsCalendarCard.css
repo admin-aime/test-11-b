@@ -1,0 +1,151 @@
+.events-calendar-card {
+  background: white;
+}
+
+.events-calendar-card .card-header {
+  background: #8bc34a;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.events-calendar-card .card-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.events-calendar-card .card-content {
+  padding: 20px;
+}
+
+.calendar-header {
+  margin-bottom: 20px;
+}
+
+.month-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.month-year {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.today-btn {
+  background: #1976d2;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.nav-btn {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: #e0e0e0;
+}
+
+.calendar-grid {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.calendar-days-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #f8f9fa;
+}
+
+.day-header {
+  padding: 8px 4px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  border-right: 1px solid #e0e0e0;
+}
+
+.day-header:last-child {
+  border-right: none;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+  min-height: 40px;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  padding: 4px;
+}
+
+.calendar-day:nth-child(7n) {
+  border-right: none;
+}
+
+.calendar-day.empty-day {
+  background: #fafafa;
+}
+
+.calendar-day.has-event {
+  background: #e3f2fd;
+}
+
+.day-number {
+  font-size: 12px;
+  color: #333;
+  font-weight: 500;
+}
+
+.event-indicator {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.event-dot {
+  width: 6px;
+  height: 6px;
+  background: #1976d2;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.event-text {
+  font-size: 8px;
+  color: #1976d2;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

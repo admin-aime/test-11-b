@@ -1,0 +1,67 @@
+.course-completion-card {
+  background: white;
+}
+
+.course-completion-card .card-header {
+  background: #0ea5e9;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.course-completion-card .card-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.course-completion-card .card-content {
+  padding: 20px;
+  position: relative;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.course-item {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.course-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.course-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 6px 0;
+}
+
+.course-status,
+.course-compliant,
+.course-due,
+.course-note {
+  font-size: 12px;
+  color: #666;
+  margin: 2px 0;
+}
+
+.course-due {
+  color: #f59e0b;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 8px;
+  right: 50%;
+  transform: translateX(50%);
+  color: #ccc;
+}
